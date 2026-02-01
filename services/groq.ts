@@ -38,7 +38,7 @@ const getAvailableKeys = async (): Promise<string[]> => {
 };
 
 // GROQ API CALL HELPER
-export const callGroqApi = async (key: string, messages: any[], model: string = "llama3-8b-8192") => {
+export const callGroqApi = async (key: string, messages: any[], model: string = "llama-3.1-8b-instant") => {
     const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
         method: "POST",
         headers: {
